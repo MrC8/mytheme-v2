@@ -37,6 +37,8 @@ You just have to put your FTP param in the local gulpfile.js
 	gulp-livereload
 	vinyl-ftp
 	gulp-notify
+	gulp-uglify
+	gulp-concat
 	```
 ### How to use
 
@@ -59,5 +61,10 @@ You just have to put your FTP param in the local gulpfile.js
 	```shell
 	gulp
 	```
+5. Launch the tasks to compile all js file in gulpfile.js
 
-5. Code your scss and gulp will minify and create two files that will be deploy on server. Refresh your brother and that's good :)
+	```shell
+	gulp scripts
+	```	
+
+6. Code your scss and gulp will minify and create two files that will be deploy on server. Refresh your brother and that's good :)
