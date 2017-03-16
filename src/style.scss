@@ -1,0 +1,20 @@
+//// IMPORT BOOTSTRAP
+@import 'bootstrap/bootstrap';
+//// IMPORT DES FICHIERS SASS
+@import 'typos';
+@import 'variables';
+@import 'structure';
+@import 'header';
+@import 'footer';
+@import 'menu';
+@import 'content';
+@import 'captions';
+@import 'galleries';
+
+//// IMPORT FONTAWESOME
+@import 'fontawesome/font-awesome';
+//// IMPORT TETHER
+@import 'tether/tether';
+@import 'tether/tether-theme-basic';
+@import 'tether/tether-theme-arrows';
+@import 'tether/tether-theme-arrows-dark';
