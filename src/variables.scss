@@ -1,0 +1,123 @@
+@import 'bootstrap/_variables';
+
+// Couleurs principales
+$primary:		$brand-primary;  // bleu
+$primary-light:		lighten($primary, 18%);
+$primary-lighter:	lighten($primary, 10%);
+$primary-dark:		darken($primary, 5%);
+
+$second:           #e6a800; // jaune
+$second-light:     lighten(#e6a800, 20%); // jaune clair
+
+$third:           #5fa9d8; // bleu ciel
+
+$red:           #b80f24;
+$red-light:     #d02036;
+
+
+// MIXINS
+
+// les arrondis
+@mixin radius($radius) {
+    border-radius: $radius;    
+}
+
+// Box shadow
+@mixin box-shadow($string){
+	box-shadow:         $string;
+}
+
+// effect
+@mixin smooth($time){
+    transition-property: all;
+    transition-duration: $time;
+    transition-timing-function: ease;
+}
+
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+a:focus,
+a:active{
+    outline:0 !important;
+}
+
+.alignleft{
+    float: left;
+    margin: 0 1em 1em 0;
+}
+.alignright{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.aligncenter{
+    text-align: center !important; 
+    margin: .5em auto;
+    float: none !important; 
+    display: block; 
+}
+
+// LES BOUTONS
+.bouton{
+    display: inline-block;
+    padding: .3em .5em;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: $font-b;
+    text-align: center;
+    clear: both;
+    @include smooth(300ms);
+    @include radius(2px);
+    &:hover{
+        @include smooth(300ms);
+        text-decoration: none;
+        color: #fff;
+    }
+}
+// READMORE ET BOUTON
+.readon, .zemore{
+    @extend .bouton;
+    color: $primary !important; 
+    border:solid 1px $primary;
+    background: #fff;
+    &:hover{
+        color: #fff !important;
+        background:$primary;
+    }
+}
+.readon-b{ // bouton noir
+    @extend .bouton;
+    color: #fff !important;
+    background: $gray-base;
+}
+
+
+.more-link{display: block !important; overflow: hidden; clear: both !important; width: auto !important; margin: 1em 0 0 0}
+
+// PAGINATION
+.wp-pagenavi{
+    text-align: center;
+    margin: 0 0 1em 0;
+    span, a{
+        display: inline-block;
+        padding: .4em .8em;
+        margin: .5em;
+        font: 1.6rem/2rem Arial !important;
+        border: solid 1px #333;
+        color: #fff;
+        @include smooth(300ms);
+    }
+    .current{
+        background: $primary !important;
+        border-color:$primary;
+    }
+    a:hover{
+        background: #333;
+        @include smooth(300ms);
+        color: #fff !important;
+        text-decoration: none;
+    }
+}

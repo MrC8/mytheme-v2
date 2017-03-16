@@ -1,0 +1,35 @@
+// FONTS
+
+// $stylesheet_directory_uri -> path to stylsheet
+// $template_directory_uri   -> path to template
+
+
+$font-family-sans-serif:  Arial, Helvetica, sans-serif;
+$font-family-sans-serif-bold:  Arial, Helvetica, sans-serif;
+$font-family-sans-serif-italic:  Arial, Helvetica, sans-serif;
+$font-family-sans-serif-bold-italic:  Arial, Helvetica, sans-serif;
+
+$font-family-serif:  Georgia, Times, serif;
+$font-family-serif-bold:  Georgia, Times, serif;
+
+
+$font:                    $font-family-sans-serif;
+$font-b:                  $font-family-sans-serif-bold;
+$font-i:                  $font-family-sans-serif-italic;
+$font-bi:                 $font-family-sans-serif-bold-italic;
+$font-second:             $font-family-serif;
+$font-second-b:             $font-family-serif-bold;
+
+$font-size-base:          16px;
+$font-size-large:         ceil(($font-size-base * 1.12)); // ~18px
+$font-size-small:         ceil(($font-size-base * 0.75)); // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+$line-height-base:        1.625; // 20/14
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
