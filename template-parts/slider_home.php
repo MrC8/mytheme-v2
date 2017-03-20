@@ -24,7 +24,7 @@
 				<a href="<?php echo $link; ?>">
 			<?php endif; ?>
 
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" title="<?php echo $image['alt'] ?>" />
                 <div class="carousel-caption d-none d-md-flex align-items-center">
                 	<div class="carousel-wrap">
                     <?php if( $titre ): ?>
