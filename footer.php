@@ -22,7 +22,7 @@
 	</footer><!-- #colophon -->
     </div><!-- #inner-wrap -->
 </div><!-- #page -->
-<a href="#" class="totop" title="Retour en haut"></a>
+<a href="#" class="totop" rel="nofollow">&nbsp;</a>
 <?php wp_footer(); ?>
 
 </body>
