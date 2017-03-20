@@ -23,7 +23,7 @@
 	<div class="entry-content">
 	<?php if ( has_post_thumbnail()) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="zethumb">
-        <?php the_post_thumbnail('medium', array('class' => 'alignleft')); ?>
+        <?php the_post_thumbnail('medium', array('class' => 'alignleft', 'alt' => get_the_title(), 'title' => get_the_title())); ?>
             </a>
         <?php endif; ?>
 
