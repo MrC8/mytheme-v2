@@ -18,11 +18,12 @@ var concat = require('gulp-concat');
 gulp.task('scripts', function() {
   gulp.src([
 	  './js/tether.min.js', 
-      './js/bootstrap.min.js',
-      './js/modernizr.js',
-      './js/nav.js',
-      './js/skip-link-focus-fix.js',
-      './js/customiz.js'
+	  './js/bootstrap.min.js',
+	  './js/jquery.mobile.custom.min.js',
+	  './js/modernizr.js',
+	  './js/nav.js',
+	  './js/skip-link-focus-fix.js',
+	  './js/customiz.js'
       ])
     .pipe(concat('wia.min.js',{newLine: ';'}))
     .pipe(uglify())
