@@ -4,8 +4,8 @@ Template Name: Page colonne gauche
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area col-sm-8 col-sm-push-4">
+<div class="row">
+	<div id="primary" class="content-area col-sm-8 push-sm-4">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -24,4 +24,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div>
+
 <?php get_footer(); ?>
