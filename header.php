@@ -62,5 +62,5 @@
 	<?php endif; ?>
     <div id="content" class="site-content <?php if (!is_page_template('page-full_width.php')):?>container<?php endif; ?>">
 	    
-<?php if ( function_exists('yoast_breadcrumb') ) 
+<?php if ( function_exists('yoast_breadcrumb') && (!is_page_template('home.php'))) 
 {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>	    
