@@ -12,6 +12,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area col-sm-4 <?php if (is_page_template('page-left.php')):?>col-sm-pull-8<?php endif;?>" role="complementary">
+<aside id="secondary" class="widget-area col-sm-4 <?php if (is_page_template('page-left.php')):?>pull-sm-8<?php endif;?>" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
