@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<div class="row">
 	<div id="primary" class="content-area col-sm-8">
 		<main id="main" class="site-main" role="main">
 
@@ -31,4 +31,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
