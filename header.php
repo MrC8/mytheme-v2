@@ -43,7 +43,7 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	
-    <?php if (is_home() && is_front_page()) : ?>
+    <?php if (is_home() || is_front_page()) : ?>
     	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<?php include_once( __DIR__ . '/template-parts/slider_home.php');?>
         </div>             
