@@ -1,18 +1,17 @@
 @import 'bootstrap/_variables';
 
 // Couleurs principales
-$primary:		$brand-primary;  // bleu
+$primary:		theme-color("primary");  // bleu foncé
 $primary-light:		lighten($primary, 18%);
 $primary-lighter:	lighten($primary, 10%);
 $primary-dark:		darken($primary, 5%);
 
-$second:           #e6a800; // jaune
-$second-light:     lighten(#e6a800, 20%); // jaune clair
+$second:           $cyan; // jaune
+$second-light:     lighten($cyan, 20%); // jaune clair
 
-$third:           #5fa9d8; // bleu ciel
-
-$red:           #b80f24;
-$red-light:     #d02036;
+$gray:          $gray-800;
+$gray-light:    $gray-600;
+$gray-lighter:  $gray-200;
 
 
 // MIXINS
