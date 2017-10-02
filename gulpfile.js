@@ -17,7 +17,6 @@ var concat = require('gulp-concat');
 // création d'un fichier JS minifié : PENSER A Y METTRE LES FICHIERS
 gulp.task('scripts', function() {
   gulp.src([
-	  './js/tether.min.js', 
 	  './js/bootstrap.min.js',
 	  './js/jquery.mobile.custom.min.js',
 	  './js/modernizr.js',
