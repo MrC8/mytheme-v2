@@ -191,29 +191,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-
-/////// enlever les script wonderplugin partout sauf sur la home
-function wpdocs_dequeue_script() {
-	if ( !is_front_page() && !is_home() ){
-	   wp_dequeue_script( 'wonderplugin-slider-skins-script' );
-	   wp_deregister_script( 'wonderplugin-slider-skins-script' );
-	   
-	   wp_dequeue_script( 'wonderplugin-slider-script' );
-	   wp_deregister_script( 'wonderplugin-slider-script' );
-	   
-	   wp_dequeue_style('wonderplugin-slider-css');
-	   wp_deregister_style( 'wonderplugin-slider-css' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_script', 20 );
-
-
-/////// enlever les script contact form partout sauf sur la page contact
-function ac_remove_cf7_scripts() {
-	if ( !is_page('16')){
-		wp_deregister_style( 'contact-form-7' );
-		wp_deregister_script( 'contact-form-7' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
